@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>googleappengine</title>
+	<h1>SARAOGI 59497 CSE 6331, Cloud Computing  01:00</hi>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+	<h1>successful login</h1>
+  <h2>Upload an image </h2>
+  <form method="POST", action ="/upload" enctype="multipart/form-data">
+	<!--<Image ID: <input type="text" name="id" />-->
+	<input type="file" name="pic" accept="image/*"><br>
+	Comments:
+	<input type="text" name="comments">
+	
+
+    <input type="Submit" value ="upload" name ="Submit">
+    
+  </form>
+  <br> <br> <br><br>
+  <form action="/fetchmine" method="POST">
+<h2>View my Images:</h2>
+<input type="submit" name="Submit" value ="view">
+</form><br>
+  <br>
+<form action="/fetch" method="POST">
+<h2>View all Images:</h2>
+<input type="submit" name="Submit" value ="view">
+</form>
+</body>
+</html>

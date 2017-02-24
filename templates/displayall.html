@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>View image</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+{%for item in lists%}
+User:{{item.user}}<br>
+Filename: {{item.file_name}}<br>
+<img src={{ item.image }} style="width=508px;height:328px;"></img><br>
+Comments:{{item.com}}<br><br>
+{% endfor %}
+</body>
+</html>
+ 
